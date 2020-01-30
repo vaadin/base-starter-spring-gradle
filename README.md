@@ -24,7 +24,6 @@ steps below to get it installed:
 ```bash
 git clone https://github.com/vaadin/vaadin-gradle-plugin
 cd vaadin-gradle-plugin
-git checkout feature/18
 ```
 
 Edit the `/build.gradle` file: at line 43 change the line from
