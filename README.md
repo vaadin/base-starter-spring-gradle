@@ -26,22 +26,10 @@ git clone https://github.com/vaadin/vaadin-gradle-plugin
 cd vaadin-gradle-plugin
 ```
 
-Edit the `/build.gradle` file: at line 43 change the line from
-
-```
-version = project.hasProperty('BUILD_VERSION') //... yadda yadda
-```
-
-to
-
-```
-version = '0.0.1'
-```
-
 Now run:
 
 ```bash
-./gradlew clean publishToMavenLocal -x test
+./gradlew clean publishToMavenLocal -x test -PBUILD_VERSION=0.0.1
 ```
 
 The command will fail, BUT there will be a jar file installed in your local Maven repository:
