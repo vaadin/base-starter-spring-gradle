@@ -5,10 +5,9 @@ mode using Gradle and Spring Boot.
 
 Prerequisites:
 * Java 8 or higher
-* node.js and npm installed locally. You can simply install those:
-  * Windows: [node.js Download site](https://nodejs.org/en/download/) - use the .msi 64-bit installer
-  * Linux: `sudo apt install npm`
-  * TODO what to do in the CI environment
+* node.js and npm installed locally. To install:
+  * Windows/Mac: [node.js Download site](https://nodejs.org/en/download/)
+  * Linux: Use package manager e.g. `sudo apt install npm` 
 * Git
 * (Optionally): Intellij Community
 
@@ -66,7 +65,7 @@ Now you can open the [http://localhost:8080](http://localhost:8080) with your br
 
 ## Building In Production Mode
 
-Simply run the following command in this repo:
+Run the following command in this repo:
 
 ```bash
 ./gradlew
@@ -74,7 +73,7 @@ Simply run the following command in this repo:
 
 That will build this app in production mode as a runnable jar archive; please find the
 jar file in `build/libs/base-starter-spring-gradle*.jar`. You can run the JAR file
-simply by using java:
+with:
 
 ```bash
 cd build/libs/
