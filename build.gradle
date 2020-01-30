@@ -33,6 +33,13 @@ ext {
 	set('vaadinVersion', "14.1.16")
 }
 
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+}
+
 dependencies {
 	implementation('com.vaadin:vaadin-spring-boot-starter') {
 //         Webjars are only needed when running in Vaadin 13 compatibility mode
@@ -41,6 +48,7 @@ dependencies {
 		 "org.webjars.bowergithub.vaadin", "org.webjars.bowergithub.webcomponents"]
 				.forEach { group -> exclude(group: group) }
 	}
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
