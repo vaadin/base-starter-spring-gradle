@@ -79,4 +79,19 @@ Now you can open the [http://localhost:8080](http://localhost:8080) with your br
 
 ## Building In Production Mode
 
-TBD more
+Simply run the following command in this repo:
+
+```bash
+./gradlew
+```
+
+That will build this app in production mode as a runnable jar archive; please find the
+jar file in `build/libs/skeleton-starter-spring-boot-gradle*.jar`. You can run the JAR file
+simply by using java:
+
+```bash
+cd build/libs/
+java -jar skeleton-starter-spring-boot-gradle*.jar
+```
+
+Now you can open the [http://localhost:8080](http://localhost:8080) with your browser.
