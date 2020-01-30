@@ -85,12 +85,12 @@ Simply run the following command in this repo:
 ```
 
 That will build this app in production mode as a runnable jar archive; please find the
-jar file in `build/libs/skeleton-starter-spring-boot-gradle*.jar`. You can run the JAR file
+jar file in `build/libs/base-starter-spring-gradle*.jar`. You can run the JAR file
 simply by using java:
 
 ```bash
 cd build/libs/
-java -jar skeleton-starter-spring-boot-gradle*.jar
+java -jar base-starter-spring-gradle*.jar
 ```
 
 Now you can open the [http://localhost:8080](http://localhost:8080) with your browser.
