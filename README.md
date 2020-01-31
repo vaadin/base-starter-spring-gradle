@@ -17,8 +17,7 @@ Prerequisites:
 
 ## Installing Vaadin Gradle Plugin
 
-Currently the Vaadin Gradle Plugin needs to be installed from sources. Please follow the
-steps below to get it installed:
+Currently the Vaadin Gradle Plugin is still in early phases. This project uses a pre-release repository with the latest pre-release build, but you might want to customise the plugin your self. With following steps you'll get a local version of it built and to be used by this project:
 
 ```bash
 git clone https://github.com/vaadin/vaadin-gradle-plugin
@@ -37,7 +36,9 @@ The command will fail, BUT there will be a jar file installed in your local Mave
 $HOME/.m2/repository/com/vaadin/vaadin-gradle-plugin/0.0.1/vaadin-gradle-plugin-0.0.1.jar
 ```
 
-The Vaadin Gradle Plugin is now ready to be used.
+Edit the build.gradle file in this project and adjust the plugin version to be 0.0.1.
+
+Your custom build of Vaadin Gradle Plugin is now ready to be used.
 
 ## Running With Spring Boot via Gradle In Development Mode
 
