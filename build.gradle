@@ -46,7 +46,7 @@ configurations {
 }
 
 dependencies {
-	implementation('com.vaadin:vaadin-spring-boot-starter') {
+	compile('com.vaadin:vaadin-spring-boot-starter') {
 //         Webjars are only needed when running in Vaadin 13 compatibility mode
 		["com.vaadin.webjar", "org.webjars.bowergithub.insites",
 		 "org.webjars.bowergithub.polymer", "org.webjars.bowergithub.polymerelements",
