@@ -1,10 +1,13 @@
-dist: trusty
 language: java
+jdk:
+  - openjdk8
+  - openjdk11
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 cache:
   directories:
-  - "$HOME/.m2"
-  - node_modules
-before_install:
-  - nvm install 12.12.0
-  - npm install -g pnpm
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - node_modules
 script: ./smoke-test.sh
