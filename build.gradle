@@ -3,15 +3,13 @@
 buildscript {
 	repositories {
 		gradlePluginPortal()
-		// in case you use local plugin builds
-		mavenLocal()
 		// pre-releases from Vaadin:
 		maven {
 			url "https://repo.vaadin.com/nexus/content/repositories/vaadin-prereleases-201912/"
 		}
 	}
 	dependencies {
-		classpath("com.vaadin:vaadin-gradle-plugin:0.2.0")
+		classpath("com.vaadin:vaadin-gradle-plugin:0.3.0")
 	}
 }
 
