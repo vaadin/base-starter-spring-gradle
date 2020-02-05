@@ -9,7 +9,7 @@ buildscript {
 		}
 	}
 	dependencies {
-		classpath("com.vaadin:vaadin-gradle-plugin:0.3.0")
+		classpath("com.vaadin:vaadin-gradle-plugin:0.4.0")
 	}
 }
 
@@ -44,9 +44,7 @@ configurations {
 }
 
 dependencies {
-	// this was `implementation`-type of dependency, but it would make the webpack compilation crash:
-	// https://github.com/vaadin/vaadin-gradle-plugin/issues/24
-	compile('com.vaadin:vaadin-spring-boot-starter') {
+	implementation('com.vaadin:vaadin-spring-boot-starter') {
 //         Webjars are only needed when running in Vaadin 13 compatibility mode
 		["com.vaadin.webjar", "org.webjars.bowergithub.insites",
 		 "org.webjars.bowergithub.polymer", "org.webjars.bowergithub.polymerelements",
