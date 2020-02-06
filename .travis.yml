@@ -10,4 +10,4 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     - node_modules
-script: ./smoke-test.sh
+script: ./.travis/smoke-test.sh
