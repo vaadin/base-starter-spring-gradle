@@ -1,26 +1,9 @@
-// later on we will be able to get rid of this buildscript{} block and simply include
-// the plugin via id("com.vaadin")
-buildscript {
-	repositories {
-		gradlePluginPortal()
-		// pre-releases from Vaadin:
-		maven {
-			url "https://repo.vaadin.com/nexus/content/repositories/vaadin-prereleases-201912/"
-		}
-	}
-	dependencies {
-		classpath("com.vaadin:vaadin-gradle-plugin:0.4.0")
-	}
-}
-
 plugins {
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-//    id("com.vaadin")  // uncomment when the plugin is published in the Gradle plugin repository
+	id 'com.vaadin' version '0.5.0'
 }
-
-apply plugin:"com.vaadin"
 
 defaultTasks("clean", "vaadinBuildFrontend", "build")
 
