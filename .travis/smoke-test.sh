@@ -14,7 +14,7 @@ fi
 
 echo Building production war file
 
-./gradlew clean vaadinPrepareNode vaadinBuildFrontend build
+./gradlew clean vaadinPrepareNode build -Pvaadin.productionMode
 
 if grep -q '"productionMode": true' build/vaadin-generated/META-INF/VAADIN/config/flow-build-info.json; then
   echo Production mode is on
