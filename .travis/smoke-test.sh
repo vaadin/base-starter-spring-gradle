@@ -3,7 +3,7 @@ set -ev
 
 echo Trying out development mode
 
-./gradlew clean vaadinPrepareNode vaadinPrepareFrontend
+./gradlew clean vaadinPrepareFrontend
 
 if grep -q '"productionMode": false' build/vaadin-generated/META-INF/VAADIN/config/flow-build-info.json; then
     echo Development mode is properly on
@@ -14,7 +14,7 @@ fi
 
 echo Building production war file
 
-./gradlew clean vaadinPrepareNode build -Pvaadin.productionMode
+./gradlew clean build -Pvaadin.productionMode
 
 if grep -q '"productionMode": true' build/vaadin-generated/META-INF/VAADIN/config/flow-build-info.json; then
   echo Production mode is on
