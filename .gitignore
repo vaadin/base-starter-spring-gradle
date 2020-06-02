@@ -36,3 +36,4 @@ node_modules/
 webpack.generated.js
 target
 out
+pnpmfile.js
