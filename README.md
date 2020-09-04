@@ -13,6 +13,13 @@ Prerequisites:
 * Git
 * (Optionally): Intellij Community
 
+## Vaadin Versions
+
+* The [v14](https://github.com/vaadin/base-starter-spring-gradle) branch (the default one)
+  contains the example app for Vaadin 14
+* The [master](https://github.com/vaadin/base-starter-spring-gradle/tree/master) branch
+  contains the example app for Vaadin 17
+
 ## Running With Spring Boot via Gradle In Development Mode
 
 Run the following command in this repo:
