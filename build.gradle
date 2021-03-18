@@ -1,8 +1,13 @@
+buildscript {
+    repositories {
+        maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
+    }
+}
 plugins {
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id 'com.vaadin' version '0.17.0.1'
+	id 'com.vaadin' version '0.20.0.0.alpha3'
 }
 
 defaultTasks("clean", "build")
@@ -16,7 +21,7 @@ repositories {
 }
 
 ext {
-	set('vaadinVersion', "18.0.3")
+	set('vaadinVersion', "19.0.1")
 }
 
 configurations {
