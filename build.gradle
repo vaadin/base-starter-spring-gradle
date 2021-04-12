@@ -7,7 +7,7 @@ plugins {
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id 'com.vaadin' version '0.20.0.0.alpha3'
+	id 'com.vaadin' version '20.0.0.alpha6'
 }
 
 defaultTasks("clean", "build")
@@ -21,7 +21,7 @@ repositories {
 }
 
 ext {
-	set('vaadinVersion', "19.0.1")
+	set('vaadinVersion', "19.0.4")
 }
 
 configurations {
@@ -49,6 +49,9 @@ test {
 	useJUnitPlatform()
 }
 
+// The following pnpmEnable = true is not needed as pnpm is used by default,
+// this is just an example of how to configure the Gradle Vaadin Plugin:
+// for more configuraion options please see: https://vaadin.com/docs/latest/guide/start/gradle/#all-options
 vaadin {
 	pnpmEnable = true
 }
