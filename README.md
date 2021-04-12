@@ -1,12 +1,12 @@
 # Vaadin Gradle Skeleton Starter Spring Boot
 
-This project demoes the possibility of having Vaadin 14 project in npm+webpack
-mode using Gradle and Spring Boot. Please see the [Vaadin Gradle Plugin Page](https://github.com/vaadin/vaadin-gradle-plugin)
-for documentation.
+This project demos the possibility of having Vaadin project in npm+webpack mode using Gradle.
+Please see the [Starting a Vaadin project using Gradle](https://vaadin.com/docs/latest/guide/start/gradle) for the documentation.
+
 
 Prerequisites:
 * Java 8 or higher
-* node.js and npm. Vaadin Gradle plugin will install those for you 
+* node.js and npm. Vaadin Gradle plugin will install those for you
   automatically (handy for CI), or you can install it to your OS:
   * Windows: [node.js Download site](https://nodejs.org/en/download/) - use the .msi 64-bit installer
   * Linux: `sudo apt install npm`
@@ -18,7 +18,7 @@ Prerequisites:
 * The [v14](https://github.com/vaadin/base-starter-spring-gradle) branch (the default one)
   contains the example app for Vaadin 14
 * The [master](https://github.com/vaadin/base-starter-spring-gradle/tree/master) branch
-  contains the example app for Vaadin 17
+  contains the example app for Vaadin 19
 
 ## Running With Spring Boot via Gradle In Development Mode
 
@@ -52,9 +52,8 @@ Run the following command in this repo:
 ./gradlew -Pvaadin.productionMode
 ```
 
-That will build this app in production mode as a runnable jar archive; please find the
-jar file in `build/libs/base-starter-spring-gradle*.jar`. You can run the JAR file
-with:
+That will build this app in production mode as a runnable jar archive; please find the jar file in `build/libs/base-starter-spring-gradle*.jar`.
+You can run the JAR file with:
 
 ```bash
 cd build/libs/
@@ -65,8 +64,7 @@ Now you can open the [http://localhost:8080](http://localhost:8080) with your br
 
 ### Building In Production On CI
 
-Usually the CI images will not have node.js+npm available. However, Vaadin Gradle Plugin
-will download it for you automatically, there is no need for you to do anything.
+Usually the CI images will not have node.js+npm available. However, Vaadin Gradle Plugin will download it for you automatically, there is no need for you to do anything.
 To build your app for production in CI, just run:
 
 ```bash
