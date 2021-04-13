@@ -15,10 +15,6 @@ repositories {
 	mavenCentral()
 }
 
-ext {
-	set('vaadinVersion', "14.5.1")
-}
-
 configurations {
 	developmentOnly
 	runtimeClasspath {
@@ -42,7 +38,7 @@ dependencies {
 
 dependencyManagement {
 	imports {
-		mavenBom "com.vaadin:vaadin-bom:${vaadinVersion}"
+		mavenBom "com.vaadin:vaadin-bom:$vaadinVersion"
 	}
 }
 
