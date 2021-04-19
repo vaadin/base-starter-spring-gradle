@@ -47,5 +47,5 @@ test {
 }
 
 vaadin {
-	pnpmEnable = true
+	pnpmEnable = false
 }
