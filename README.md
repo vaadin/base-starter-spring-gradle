@@ -49,7 +49,7 @@ Now you can open the [http://localhost:8080](http://localhost:8080) with your br
 Run the following command in this repo:
 
 ```bash
-./gradlew -Pvaadin.productionMode
+./gradlew -P"vaadin.productionMode"
 ```
 
 That will build this app in production mode as a runnable jar archive; please find the
