@@ -19,6 +19,7 @@ sourceCompatibility = '1.8'
 repositories {
 	mavenCentral()
 	maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
+        maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 }
 
 configurations {
