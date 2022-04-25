@@ -58,7 +58,7 @@
       "@vaadin/vaadin-checkbox": "22.0.12",
       "@vaadin/vaadin-combo-box": "22.0.12",
       "@vaadin/vaadin-context-menu": "22.0.12",
-      "@vaadin/vaadin-core-shrinkwrap": "22.0.13",
+      "@vaadin/vaadin-core-shrinkwrap": "22.0.14",
       "@vaadin/vaadin-custom-field": "22.0.12",
       "@vaadin/vaadin-date-picker": "22.0.12",
       "@vaadin/vaadin-date-time-picker": "22.0.12",
@@ -90,7 +90,7 @@
       "@vaadin/vertical-layout": "22.0.12",
       "@vaadin/virtual-list": "22.0.12",
       "construct-style-sheets-polyfill": "3.0.4",
-      "date-fns": "2.23.0",
+      "date-fns": "2.28.0",
       "lit": "2.0.0"
     },
     "devDependencies": {
@@ -108,14 +108,14 @@
       "loader-utils": "2.0.0",
       "typescript": "4.4.3",
       "webpack": "4.46.0",
-      "webpack-cli": "4.9.0",
-      "webpack-dev-server": "4.1.1",
+      "webpack-cli": "4.9.2",
+      "webpack-dev-server": "4.8.1",
       "webpack-merge": "4.2.2",
       "workbox-core": "6.4.2",
       "workbox-precaching": "6.4.2",
       "workbox-webpack-plugin": "6.4.2"
     },
-    "hash": "f1cf26b8863100ff73052cf7defc9b2b20797d1572a0aa5db03ee72179425af2"
+    "hash": "c2c8683241e957136feb6e969f7d11cb9c138dcdd5c03855aeae3e49eda442a3"
   },
   "dependencies": {
     "@polymer/iron-icon": "3.0.1",
@@ -174,7 +174,7 @@
     "@vaadin/vaadin-checkbox": "22.0.12",
     "@vaadin/vaadin-combo-box": "22.0.12",
     "@vaadin/vaadin-context-menu": "22.0.12",
-    "@vaadin/vaadin-core-shrinkwrap": "22.0.13",
+    "@vaadin/vaadin-core-shrinkwrap": "22.0.14",
     "@vaadin/vaadin-custom-field": "22.0.12",
     "@vaadin/vaadin-date-picker": "22.0.12",
     "@vaadin/vaadin-date-time-picker": "22.0.12",
@@ -206,7 +206,7 @@
     "@vaadin/vertical-layout": "22.0.12",
     "@vaadin/virtual-list": "22.0.12",
     "construct-style-sheets-polyfill": "3.0.4",
-    "date-fns": "2.23.0",
+    "date-fns": "2.28.0",
     "lit": "2.0.0"
   },
   "devDependencies": {
@@ -228,8 +228,8 @@
     "loader-utils": "2.0.0",
     "typescript": "4.4.3",
     "webpack": "4.46.0",
-    "webpack-cli": "4.9.0",
-    "webpack-dev-server": "4.1.1",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.8.1",
     "webpack-merge": "4.2.2",
     "workbox-core": "6.4.2",
     "workbox-precaching": "6.4.2",
