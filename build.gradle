@@ -1,7 +1,9 @@
 buildscript {
     repositories {
-        maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
-    }
+    	mavenCentral()
+	    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
+        maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
+		}
 }
 plugins {
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
@@ -18,6 +20,7 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 	maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
 }
 
