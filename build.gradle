@@ -6,8 +6,8 @@ buildscript {
 		}
 }
 plugins {
-	id 'org.springframework.boot' version '2.2.4.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'org.springframework.boot' version '2.7.6'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 	id 'java'
 	id 'com.vaadin'
 }
