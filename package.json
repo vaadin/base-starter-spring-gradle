@@ -58,7 +58,7 @@
       "@vaadin/vaadin-checkbox": "22.0.22",
       "@vaadin/vaadin-combo-box": "22.0.22",
       "@vaadin/vaadin-context-menu": "22.0.22",
-      "@vaadin/vaadin-core-shrinkwrap": "22.0.27",
+      "@vaadin/vaadin-core-shrinkwrap": "22.0.28",
       "@vaadin/vaadin-custom-field": "22.0.22",
       "@vaadin/vaadin-date-picker": "22.0.22",
       "@vaadin/vaadin-date-time-picker": "22.0.22",
@@ -115,7 +115,7 @@
       "workbox-precaching": "6.4.2",
       "workbox-webpack-plugin": "6.4.2"
     },
-    "hash": "ce1e438aac9e46106343cf601552d355234938cc631b1aec549b9e81b18544ba"
+    "hash": "07a26d0166407a9c4616019a5c88a3ab0730f728c7131eda6ae5973f601bdb49"
   },
   "dependencies": {
     "@polymer/iron-icon": "3.0.1",
@@ -174,7 +174,7 @@
     "@vaadin/vaadin-checkbox": "22.0.22",
     "@vaadin/vaadin-combo-box": "22.0.22",
     "@vaadin/vaadin-context-menu": "22.0.22",
-    "@vaadin/vaadin-core-shrinkwrap": "22.0.27",
+    "@vaadin/vaadin-core-shrinkwrap": "22.0.28",
     "@vaadin/vaadin-custom-field": "22.0.22",
     "@vaadin/vaadin-date-picker": "22.0.22",
     "@vaadin/vaadin-date-time-picker": "22.0.22",
