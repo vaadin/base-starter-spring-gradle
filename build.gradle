@@ -2,7 +2,6 @@ buildscript {
     repositories {
     	mavenCentral()
 	    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
-        maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
 		}
 }
 plugins {
@@ -11,12 +10,6 @@ plugins {
 	id 'java'
 	id 'com.vaadin'
 }
-
-defaultTasks("clean", "build")
-
-group = 'com.example'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
 
 repositories {
 	mavenCentral()
@@ -43,15 +36,4 @@ dependencyManagement {
 	imports {
 		mavenBom "com.vaadin:vaadin-bom:$vaadinVersion"
 	}
-}
-
-test {
-	useJUnitPlatform()
-}
-
-// The following pnpmEnable = true is not needed as pnpm is used by default,
-// this is just an example of how to configure the Gradle Vaadin Plugin:
-// for more configuration options please see: https://vaadin.com/docs/latest/guide/start/gradle/#all-options
-vaadin {
-	pnpmEnable = true
 }
