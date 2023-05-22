@@ -5,7 +5,7 @@ Please see the [Starting a Vaadin project using Gradle](https://vaadin.com/docs/
 
 
 Prerequisites:
-* Java 8 or higher
+* Java 17 or higher
 * node.js and npm. Vaadin Gradle plugin will install those for you
   automatically (handy for CI), or you can install it to your OS:
   * Windows: [node.js Download site](https://nodejs.org/en/download/) - use the .msi 64-bit installer
