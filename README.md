@@ -6,19 +6,17 @@ Please see the [Starting a Vaadin project using Gradle](https://vaadin.com/docs/
 
 Prerequisites:
 * Java 17 or higher
-* node.js and npm. Vaadin Gradle plugin will install those for you
-  automatically (handy for CI), or you can install it to your OS:
-  * Windows: [node.js Download site](https://nodejs.org/en/download/) - use the .msi 64-bit installer
-  * Linux: `sudo apt install npm`
 * Git
 * (Optionally): Intellij Community
+* (Optionally): Node.js and npm, if you have JavaScript/TypeScript customisations in your project.
+  * You can either let the Vaadin Gradle plugin to install `Node.js` and `npm/pnpm` for you automatically, or you can install it to your OS:
+  * Windows: [node.js Download site](https://nodejs.org/en/download/) - use the .msi 64-bit installer
+  * Linux: `sudo apt install npm`
 
 ## Vaadin Versions
 
-* The [v14](https://github.com/vaadin/base-starter-spring-gradle) branch (the default one)
-  contains the example app for Vaadin 14
-* The [master](https://github.com/vaadin/base-starter-spring-gradle/tree/master) branch
-  contains the example app for Vaadin 19
+* The [v24](https://github.com/vaadin/base-starter-spring-gradle) branch (the default one) contains the example app for Vaadin latest version
+* See other branches for other Vaadin versions.
 
 ## Running With Spring Boot via Gradle In Development Mode
 
@@ -64,7 +62,8 @@ Now you can open the [http://localhost:8080](http://localhost:8080) with your br
 
 ### Building In Production On CI
 
-Usually the CI images will not have node.js+npm available. However, Vaadin Gradle Plugin will download it for you automatically, there is no need for you to do anything.
+Usually the CI images will not have node.js+npm available. Vaadin uses pre-compiled bundle when possible, i.e. Node.js is not always needed.
+Or Vaadin Gradle Plugin will download Node.js for you automatically if it finds any front-end customisations, there is no need for you to do anything.
 To build your app for production in CI, just run:
 
 ```bash
