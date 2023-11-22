@@ -2,10 +2,11 @@ buildscript {
     repositories {
     	mavenCentral()
 	    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
+			maven { setUrl("https://repo.spring.io/milestone") }
 		}
 }
 plugins {
-	id 'org.springframework.boot' version '3.0.2'
+	id 'org.springframework.boot' version '3.1.5'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 	id 'java'
 	id 'com.vaadin'
@@ -14,6 +15,7 @@ plugins {
 repositories {
 	mavenCentral()
 	maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
+	maven { setUrl("https://repo.spring.io/milestone") }
 	maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
 }
 
