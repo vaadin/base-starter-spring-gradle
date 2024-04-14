@@ -1,6 +1,8 @@
 package com.example.demo.translation;
 
 public class GermanTranslation extends T {
+    public static TString YOUR_NAME = new TString("YOUR_NAME", "Dein name");
+    public static TString SAY_HELLO = new TString("SAY_HELLO", "Sag hallo");
     public static TString HELLO = new TString("HELLO", "Hallo");
     public static TString HELLO_ANON = new TString("HELLO_ANON", "Hallo anonymer Benutzer.");
     public static TString LOGIN = new TString("LOGIN", "Einloggen");
