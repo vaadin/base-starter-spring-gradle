@@ -1,12 +1,14 @@
 package com.example.demo;
 
+import com.example.demo.translation.T;
+
 public class GreetService {
 
     public String greet(String name) {
         if (name == null || name.isEmpty()) {
-            return "Hello anonymous user";
+            return ""+T.HELLO_ANON;
         } else {
-            return "Hello " + name;
+            return T.HELLO + " " + name;
         }
     }
 }
