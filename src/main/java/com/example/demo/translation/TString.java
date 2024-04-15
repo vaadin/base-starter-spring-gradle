@@ -16,4 +16,11 @@ public class TString {
             return value;
         }
     }
+
+    /**
+     * @see String#format(String, Object...)
+     */
+    public String s(Object... args) {
+        return toString().formatted(args);
+    }
 }

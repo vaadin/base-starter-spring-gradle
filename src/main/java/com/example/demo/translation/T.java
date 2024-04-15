@@ -53,7 +53,7 @@ public class T {
 
     public static TString YOUR_NAME = new TString("YOUR_NAME", "Your name");
     public static TString SAY_HELLO = new TString("SAY_HELLO", "Say hello");
-    public static TString HELLO = new TString("HELLO", "Hello");
+    public static TString HELLO = new TString("HELLO", "Hello %s.");
     public static TString HELLO_ANON = new TString("HELLO_ANON", "Hello anonymous user.");
     public static TString LOGIN = new TString("LOGIN", "Login");
     public static TString EMAIL = new TString("EMAIL", "Email");

@@ -8,7 +8,7 @@ public class GreetService {
         if (name == null || name.isEmpty()) {
             return T.HELLO_ANON+"";
         } else {
-            return T.HELLO + " " + name;
+            return T.HELLO.s(name);
         }
     }
 }
