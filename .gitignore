@@ -39,4 +39,4 @@ target
 out
 pnpmfile.js
 .npmrc
-frontend/generated
+src/main/frontend/generated
