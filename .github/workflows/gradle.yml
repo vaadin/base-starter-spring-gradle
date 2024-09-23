@@ -32,6 +32,12 @@ jobs:
           ~/.vaadin
           ~/.pnpm-store
         key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml', '**/package.json') }}
+    - name: Set TB License
+      shell: bash
+      run: |
+          TB_LICENSE=${{secrets.TB_LICENSE}}
+          mkdir -p ~/.vaadin/
+          echo '{"username":"'`echo $TB_LICENSE | cut -d / -f1`'","proKey":"'`echo $TB_LICENSE | cut -d / -f2`'"}' > ~/.vaadin/proKey
     - name: Build with Gradle
       run: ./gradlew clean build '-Pvaadin.productionMode' --stacktrace --info --no-daemon
 
