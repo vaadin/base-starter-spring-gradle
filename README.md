@@ -1,7 +1,7 @@
 # Vaadin Gradle Skeleton Starter Spring Boot
 
 This project demos the possibility of having Vaadin project in npm+webpack mode using Gradle.
-Please see the [Starting a Vaadin project using Gradle](https://vaadin.com/docs/latest/guide/start/gradle) for the documentation.
+Please see the [Starting a Vaadin project using Gradle](https://vaadin.com/docs/latest/getting-started/project/gradle) for the documentation.
 
 
 Prerequisites:
