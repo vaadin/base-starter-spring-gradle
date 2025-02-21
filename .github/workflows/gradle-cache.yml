@@ -25,9 +25,9 @@ jobs:
           cache-encryption-key: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
           # Only write to the cache for builds on the 'main' and 'release' branches. (Default is 'main' only.)
           # Builds on other branches will only read existing entries from the cache.
-          #cache-read-only: ${{ github.ref != 'refs/heads/main'  }}
+          cache-read-only: ${{ github.ref != 'refs/heads/main' && github.ref != 'refs/heads/spikes/20950-gradle_cache' }}
           # Allow writing to cache
-          cache-read-only: false
+          #cache-read-only: false
       - name: Build with Gradle
         env:
           GRADLE_ENCRYPTION_KEY: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
