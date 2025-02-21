@@ -7,11 +7,10 @@ buildscript {
 	dependencies {
 		classpath('com.vaadin:flow-gradle-plugin:24.7.21022-SNAPSHOT')
 	}
-
 }
 plugins {
-	id 'org.springframework.boot' version '3.3.4'
-	id 'io.spring.dependency-management' version '1.1.6'
+	id 'org.springframework.boot' version '3.4.2'
+	id 'io.spring.dependency-management' version '1.1.7'
 	id 'java'
 	id 'com.vaadin'
 }
@@ -31,7 +30,9 @@ configurations {
 }
 
 dependencies {
-	implementation('com.vaadin:vaadin-spring-boot-starter')
+	implementation('com.vaadin:vaadin-spring-boot-starter') {
+		exclude group: 'com.vaadin', module: 'hilla'
+	}
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
