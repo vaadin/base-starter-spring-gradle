@@ -4,6 +4,10 @@ buildscript {
 	    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 			maven { setUrl("https://repo.spring.io/milestone") }
 		}
+	dependencies {
+		classpath('com.vaadin:flow-gradle-plugin:24.7.21022-SNAPSHOT')
+	}
+
 }
 plugins {
 	id 'org.springframework.boot' version '3.3.4'

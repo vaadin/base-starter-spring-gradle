@@ -1,4 +1,12 @@
 pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "com.vaadin") {
+                println "=====================>> flow-gradle-plugin for ID ${requested.id.id}"
+                useModule("com.vaadin:flow-gradle-plugin:24.7.21022-SNAPSHOT")
+            }
+        }
+    }
   repositories {
       maven { url = 'https://maven.vaadin.com/vaadin-prereleases' }
       gradlePluginPortal()
@@ -7,3 +15,4 @@ pluginManagement {
       id 'com.vaadin' version "${vaadinVersion}"
   }
 }
+enableFeaturePreview "STABLE_CONFIGURATION_CACHE"
