@@ -1,1 +1,0 @@
-Place your React views or hand written templates in this folder.

@@ -1,18 +1,21 @@
 buildscript {
+    dependencies { classpath 'com.vaadin:flow-gradle-plugin:25.0-SNAPSHOT' }
     repositories {
     	mavenCentral()
+
 	    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 			maven { setUrl("https://repo.spring.io/milestone") }
 		}
 }
 plugins {
-	id 'org.springframework.boot' version '3.5.3'
+	id 'org.springframework.boot' version '4.0.0-M3'
 	id 'io.spring.dependency-management' version '1.1.6'
 	id 'java'
 	id 'com.vaadin'
 }
 
 repositories {
+    mavenLocal()
 	mavenCentral()
 	maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 	maven { setUrl("https://repo.spring.io/milestone") }
@@ -27,6 +30,9 @@ configurations {
 }
 
 dependencies {
+    implementation("org.hotswapagent:hotswap-agent-vaadin-plugin:2.0.1")
+	implementation('com.vaadin:flow-server:25.0-SNAPSHOT')
+	implementation('com.vaadin:vaadin-dev-server:25.0-SNAPSHOT')
 	implementation('com.vaadin:vaadin-spring-boot-starter')
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {

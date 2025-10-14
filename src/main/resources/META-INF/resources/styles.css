@@ -1,0 +1,18 @@
+@import '@vaadin/aura/aura.css';
+
+body {
+    background-color: blue;
+}
+/* Example: CSS class name to center align the content . */
+.centered-content {
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+/* Example: the style is applied only to the textfields which have the `bordered` class name. */
+vaadin-text-field.bordered::part(input-field) {
+    box-shadow: inset 0 0 0 3px var(--lumo-contrast-30pct);
+    background-color: red;
+}
+
+
