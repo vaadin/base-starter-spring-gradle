@@ -5,7 +5,7 @@ Please see the [Starting a Vaadin project using Gradle](https://vaadin.com/docs/
 
 
 Prerequisites:
-* Java 17 or higher
+* Java 21 or higher
 * Git
 * (Optionally): Intellij Community
 * (Optionally): Node.js and npm, if you have JavaScript/TypeScript customisations in your project.
@@ -15,7 +15,7 @@ Prerequisites:
 
 ## Vaadin Versions
 
-* The [v24](https://github.com/vaadin/base-starter-spring-gradle) branch (the default one) contains the example app for Vaadin latest version
+* The [v25](https://github.com/vaadin/base-starter-spring-gradle) branch (the default one) contains the example app for Vaadin latest version
 * See other branches for other Vaadin versions.
 
 ## Running With Spring Boot via Gradle In Development Mode
