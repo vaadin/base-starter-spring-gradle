@@ -34,12 +34,6 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
-vaadin {
-    productionMode = gradle.startParameter.taskNames.any {
-        ["bootJar", "bootBuildImage"].contains(it)
-    }
-}
-
 dependencyManagement {
 	imports {
 		mavenBom "com.vaadin:vaadin-bom:$vaadinVersion"
