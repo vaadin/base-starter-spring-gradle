@@ -47,15 +47,15 @@ Now you can open the [http://localhost:8080](http://localhost:8080) with your br
 Run the following command in this repo:
 
 ```bash
-./gradlew clean build -Pvaadin.productionMode
+./gradlew clean bootJar
 ```
 
-That will build this app in production mode as a runnable jar archive; please find the jar file in `build/libs/base-starter-spring-gradle*.jar`.
+That will build this app in production mode as a runnable jar archive; please find the jar file in `build/libs/base-starter-spring-gradle.jar`.
 You can run the JAR file with:
 
 ```bash
 cd build/libs/
-java -jar base-starter-spring-gradle*.jar
+java -jar base-starter-spring-gradle.jar
 ```
 
 Now you can open the [http://localhost:8080](http://localhost:8080) with your browser.
@@ -67,5 +67,5 @@ Or Vaadin Gradle Plugin will download Node.js for you automatically if it finds 
 To build your app for production in CI, just run:
 
 ```bash
-./gradlew clean build -Pvaadin.productionMode
+./gradlew clean bootJar
 ```

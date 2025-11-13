@@ -6,7 +6,7 @@ buildscript {
 		}
 }
 plugins {
-	id 'org.springframework.boot' version '4.0.0-M3'
+	id 'org.springframework.boot' version '4.0.0-RC1'
 	id 'io.spring.dependency-management' version '1.1.7'
 	id 'java'
 	id 'com.vaadin'
@@ -27,11 +27,11 @@ configurations {
 }
 
 dependencies {
-	implementation('com.vaadin:vaadin-spring-boot-starter')
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
+	implementation('com.vaadin:vaadin-spring-boot-starter') {
+        exclude group: 'com.vaadin', module: 'vaadin-dev'
+    }
+	developmentOnly('org.springframework.boot:spring-boot-devtools', 'com.vaadin:vaadin-dev')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
