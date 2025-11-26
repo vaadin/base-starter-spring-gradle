@@ -27,9 +27,7 @@ configurations {
 }
 
 dependencies {
-	implementation('com.vaadin:vaadin-spring-boot-starter') {
-        exclude group: 'com.vaadin', module: 'vaadin-dev'
-    }
+	implementation('com.vaadin:vaadin-spring-boot-starter')
 	developmentOnly('org.springframework.boot:spring-boot-devtools', 'com.vaadin:vaadin-dev')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
