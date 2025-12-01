@@ -4,6 +4,11 @@ buildscript {
 	    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 			maven { setUrl("https://repo.spring.io/milestone") }
 		}
+    /*
+	dependencies {
+		classpath('com.github.oshi:oshi-core:6.9.1')
+	}
+     */
 }
 plugins {
 	id 'org.springframework.boot' version '4.0.0-RC1'
@@ -28,12 +33,24 @@ configurations {
 
 dependencies {
 	implementation('com.vaadin:vaadin-spring-boot-starter')
+	//developmentOnly('com.github.oshi:oshi-core:6.9.1')
+	//testRuntimeOnly('com.github.oshi:oshi-core:6.9.1')
 	developmentOnly('org.springframework.boot:spring-boot-devtools', 'com.vaadin:vaadin-dev')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testImplementation("com.vaadin:vaadin-testbench-junit5")
+    runtimeOnly('com.vaadin:observability-kit-starter')
 }
 
 dependencyManagement {
 	imports {
 		mavenBom "com.vaadin:vaadin-bom:$vaadinVersion"
 	}
+
+}
+
+tasks.named('test', Test) {
+    useJUnitPlatform()
+    testLogging {
+        events "passed"
+    }
 }
