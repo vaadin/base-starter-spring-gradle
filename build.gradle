@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+    	mavenLocal()
     	mavenCentral()
 	    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 			maven { setUrl("https://repo.spring.io/milestone") }
@@ -9,10 +10,11 @@ plugins {
 	id 'org.springframework.boot' version '4.0.0-RC1'
 	id 'io.spring.dependency-management' version '1.1.7'
 	id 'java'
-	id 'com.vaadin'
+	id 'com.vaadin.flow'
 }
 
 repositories {
+	mavenLocal()
 	mavenCentral()
 	maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
 	maven { setUrl("https://repo.spring.io/milestone") }
@@ -29,7 +31,7 @@ configurations {
 dependencies {
 	implementation project(':lib')
 	implementation('com.vaadin:vaadin-spring-boot-starter')
-	developmentOnly('org.springframework.boot:spring-boot-devtools', 'com.vaadin:vaadin-dev')
+	developmentOnly('org.springframework.boot:spring-boot-devtools')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
