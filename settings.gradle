@@ -7,3 +7,5 @@ pluginManagement {
       id 'com.vaadin' version "${vaadinVersion}"
   }
 }
+
+include 'lib'

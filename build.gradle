@@ -27,6 +27,7 @@ configurations {
 }
 
 dependencies {
+	implementation project(':lib')
 	implementation('com.vaadin:vaadin-spring-boot-starter')
 	developmentOnly('org.springframework.boot:spring-boot-devtools', 'com.vaadin:vaadin-dev')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
